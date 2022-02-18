@@ -14,6 +14,8 @@ import {SettingsContainer} from '../../pages/settings/SettingsContainer';
 import {SettingsService} from '../../pages/settings/SettingsService';
 import {GoogleAuthContainer} from '../../pages/google-auth/GoogleAuthContainer';
 import {GoogleAuthService} from '../../pages/google-auth/GoogleAuthService';
+import {QuestionsListService} from '../../pages/questions-list/QuestionsListService';
+import {QuestionsListContainer} from '../../pages/questions-list/QuestionsListContainer';
 
 
 export const NavigationContainer: FC<INavigationContainer> = ({
@@ -23,12 +25,16 @@ export const NavigationContainer: FC<INavigationContainer> = ({
                                                                   spinnerService,
                                                                   confirmDialogService,
                                                                   settingsService,
-                                                                  localBackupsService
+                                                                  localBackupsService,
+                                                                  questionsListService
                                                               }) => {
 
     return <Switch>
         <Redirect exact from="/MyFeedback" to={Routs.localBackups.path}/>
-        <Redirect exact from="/" to={Routs.localBackups.path}/>
+        <Redirect exact from="/" to={Routs.questionLists.path}/>
+        <Route path={Routs.questionLists.path}>
+            <QuestionsListContainer questionsListService={questionsListService}/>
+        </Route>
         <Route path={Routs.googleAuth.path}>
             <GoogleAuthContainer googleAuthService={googleAuthService} errorService={errorService}/>
         </Route>
@@ -52,6 +58,7 @@ interface INavigationContainer {
     spinnerService: SpinnerService;
     confirmDialogService: ConfirmDialogService;
     localBackupsService: LocalBackupsService;
-    settingsService: SettingsService
-    googleAuthService: GoogleAuthService
+    settingsService: SettingsService;
+    googleAuthService: GoogleAuthService;
+    questionsListService: QuestionsListService;
 }

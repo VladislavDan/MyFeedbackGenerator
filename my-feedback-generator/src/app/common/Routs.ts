@@ -17,5 +17,10 @@ export const Routs = {
     settings: {
         path: '/settings',
         name: 'Settings'
+    },
+
+    questionLists: {
+        path: '/questions-list',
+        name: 'Questions List'
     }
 };

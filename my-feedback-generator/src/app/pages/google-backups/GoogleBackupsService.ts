@@ -6,12 +6,12 @@ import {StorageService} from '../../common/services/StorageService';
 import {IGoogleDriveFile} from '../../types/IGoogleDriveFile';
 import {Channel} from '../../common/Channel';
 import {formatCreatedDate} from './logic/formatCreatedDate';
-import {IFeedback} from '../../types/IFeedback';
+import {IQuestionsList} from '../../types/IQuestionsList';
 
 export class GoogleBackupsService {
 
     public backupsNameLoadChannel: Channel<string, IGoogleDriveFile[]>;
-    public backupLoadChannel: Channel<string, IFeedback>;
+    public backupLoadChannel: Channel<string, IQuestionsList>;
     public backupUploadChannel: Channel<void, string>;
     public backupDeleteChannel: Channel<string, AjaxResponse<string>>;
 
@@ -35,7 +35,7 @@ export class GoogleBackupsService {
         ));
 
         this.backupLoadChannel = new Channel((backupID: string) => of('').pipe(
-            switchMap((): Observable<IFeedback> => this.loadBackupFile(backupID))
+            switchMap((): Observable<IQuestionsList> => this.loadBackupFile(backupID))
         ));
 
         this.backupUploadChannel = new Channel(() => of('').pipe(
@@ -102,9 +102,9 @@ export class GoogleBackupsService {
         );
     }
 
-    public loadBackupFile(fileId: string): Observable<IFeedback> {
+    public loadBackupFile(fileId: string): Observable<IQuestionsList> {
         return this.storageService.getAuthToken().pipe(
-            switchMap((authToken: string) => ajax<IFeedback>(
+            switchMap((authToken: string) => ajax<IQuestionsList>(
                 {
                     url: this.googleDriveFilesAPI + fileId + this.getFilesAdditionalPartURI,
                     headers: {
@@ -113,7 +113,7 @@ export class GoogleBackupsService {
                     method: "GET"
                 }
             )),
-            map((result: AjaxResponse<IFeedback>) => {
+            map((result: AjaxResponse<IQuestionsList>) => {
                 this.storageService.setBackup(result.response);
                 return result.response;
             })
@@ -196,7 +196,7 @@ export class GoogleBackupsService {
 
     public uploadBackupFile(token: string, fileId: string): Observable<string> {
         return this.storageService.getBackup().pipe(
-            switchMap((feedback: IFeedback) => ajax(
+            switchMap((feedback: IQuestionsList) => ajax(
                 {
                     url: this.googleDriveUploadAPI + fileId,
                     headers: {

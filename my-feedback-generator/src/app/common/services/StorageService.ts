@@ -1,7 +1,7 @@
 import {from, Observable} from 'rxjs';
 import {DataBaseService} from './DataBaseService';
-import {IFeedback} from '../../types/IFeedback';
 import {ISettings} from '../../types/ISettings';
+import {IQuestionsList} from '../../types/IQuestionsList';
 
 export class StorageService {
 
@@ -12,7 +12,7 @@ export class StorageService {
     constructor(private dataBaseService: DataBaseService) {
     }
 
-    public getBackup = (): Observable<IFeedback> => {
+    public getBackup = (): Observable<IQuestionsList> => {
         return from(this.getBackupFromDataBase());
     };
 
@@ -20,7 +20,7 @@ export class StorageService {
         let backup = null;
 
         try {
-            backup = await this.dataBaseService.get<IFeedback>(this.feedbackStorageID);
+            backup = await this.dataBaseService.get<IQuestionsList>(this.feedbackStorageID);
         } catch (e) {
             console.error(e);
             return backup;
@@ -32,11 +32,11 @@ export class StorageService {
         }
     };
 
-    public setBackup(feedback: IFeedback): Observable<IFeedback> {
+    public setBackup(feedback: IQuestionsList): Observable<IQuestionsList> {
         return from(this.setBackupToDataBase(feedback));
     }
 
-    private setBackupToDataBase = async (feedback: IFeedback) => {
+    private setBackupToDataBase = async (feedback: IQuestionsList) => {
         try {
             await this.dataBaseService.set(this.feedbackStorageID, feedback);
         } catch (e) {

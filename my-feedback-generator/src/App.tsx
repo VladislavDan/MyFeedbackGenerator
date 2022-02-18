@@ -19,6 +19,8 @@ import {LocalBackupsService} from './app/pages/local-backup/LocalBackupsService'
 import {DataBaseService} from './app/common/services/DataBaseService';
 import {SettingsService} from './app/pages/settings/SettingsService';
 import {GoogleAuthService} from './app/pages/google-auth/GoogleAuthService';
+import {QuestionsListService} from './app/pages/questions-list/QuestionsListService';
+import {ToolbarService} from './app/parts/toolbar/ToolbarService';
 
 export const AppContext = React.createContext<IAppContext>(defaultAppState);
 
@@ -33,6 +35,8 @@ const googleBackupsService = new GoogleBackupsService(storageService);
 const localBackupsService = new LocalBackupsService(storageService);
 const settingService = new SettingsService(storageService);
 const googleAuthService = new GoogleAuthService(storageService);
+const questionsListService = new QuestionsListService(storageService);
+const toolbarService = new ToolbarService(storageService);
 
 function App() {
 
@@ -54,7 +58,7 @@ function App() {
 
                         <ErrorContainer errorService={errorService}/>
 
-                        <ToolbarContainer/>
+                        <ToolbarContainer toolbarService={toolbarService}/>
 
                         <NavigationPanelContainer/>
 
@@ -70,6 +74,7 @@ function App() {
                                 confirmDialogService={confirmDialogService}
                                 localBackupsService={localBackupsService}
                                 settingsService={settingService}
+                                questionsListService={questionsListService}
                             />
                         </div>
                     </div>

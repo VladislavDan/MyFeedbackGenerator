@@ -15,6 +15,8 @@ export const NavigationPanelComponent: FC<INavigationPanelComponent> = ({isOpen,
             onOpen={toggleDrawer(true)}
         >
             <List>
+                <NavigationLinkComponent path={Routs.questionLists.path} name={Routs.questionLists.name}
+                                         toggleDrawer={toggleDrawer}/>
                 <NavigationLinkComponent path={Routs.googleAuth.path} name={Routs.googleAuth.name}
                                          toggleDrawer={toggleDrawer}/>
                 <NavigationLinkComponent path={Routs.localBackups.path} name={Routs.localBackups.name}
