@@ -1,16 +1,16 @@
 import {StorageService} from '../../common/services/StorageService';
 import {Channel} from '../../common/Channel';
-import {QuestionsList} from '../../questions/QuestionsList';
 import {IQuestionsList} from '../../types/IQuestionsList';
 import {map, switchMap, tap} from 'rxjs/operators';
 import {IQuestionGrade} from '../../types/IQuestionGrade';
 import {IThemeGrade} from '../../types/IThemGrade';
 import {changeQuestionGrade} from './logic/changeQuestionGrade';
 import {changeThemeGrade} from './logic/changeThemeGrade';
+import {initQuestions} from './logic/initQuestions';
 
 export class QuestionsListService {
 
-    private questionsList = QuestionsList;
+    private questionsList = initQuestions();
 
     public questionListChannel: Channel<string, IQuestionsList>;
     public changeThemeGradeChannel: Channel<{ grade: IThemeGrade, id: string }, IQuestionsList>;
