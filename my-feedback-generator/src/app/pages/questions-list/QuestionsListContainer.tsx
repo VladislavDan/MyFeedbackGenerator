@@ -42,7 +42,7 @@ export const QuestionsListContainer: FC<IQuestionsListContainer> = ({questionsLi
     };
 
     return <QuestionsListComponent
-        themes={state ? state.questionsList.themes : []}
+        questionsList={state ? state.questionsList : null}
         onChangeThemeGrade={onChangeThemeGrade}
         onChangeQuestionGrade={onChangeQuestionGrade}
     />;
