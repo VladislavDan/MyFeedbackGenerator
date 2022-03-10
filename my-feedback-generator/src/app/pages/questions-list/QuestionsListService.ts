@@ -1,12 +1,13 @@
 import {StorageService} from '../../common/services/StorageService';
 import {Channel} from '../../common/Channel';
 import {IQuestionsList} from '../../types/IQuestionsList';
-import {map, switchMap, tap} from 'rxjs/operators';
+import {debounce, map, switchMap, tap} from 'rxjs/operators';
 import {IQuestionGrade} from '../../types/IQuestionGrade';
 import {IThemeGrade} from '../../types/IThemGrade';
 import {changeQuestionGrade} from './logic/changeQuestionGrade';
 import {changeThemeGrade} from './logic/changeThemeGrade';
 import {initQuestions} from './logic/initQuestions';
+import {interval, of} from "rxjs";
 
 export class QuestionsListService {
 
@@ -15,6 +16,7 @@ export class QuestionsListService {
     public questionListChannel: Channel<string, IQuestionsList>;
     public changeThemeGradeChannel: Channel<{ grade: IThemeGrade, id: string }, IQuestionsList>;
     public changeQuestionGradeChannel: Channel<{ grade: IQuestionGrade, id: string }, IQuestionsList>;
+    public changeQuestionListChannel: Channel<IQuestionsList, IQuestionsList>;
 
     constructor(private storageService: StorageService) {
 
@@ -45,5 +47,13 @@ export class QuestionsListService {
                 storageService.setBackup(questionsList)
             })
         ));
+
+        this.changeQuestionListChannel = new Channel<IQuestionsList, IQuestionsList>((questionList: IQuestionsList) =>
+            of(questionList).pipe(
+                tap(() => {
+                    storageService.setBackup(questionList);
+                })
+            )
+        )
     }
 }

@@ -15,8 +15,8 @@ export const TextEditorComponent: FC<ITextEditorComponent> = ({onChangeText, cha
         id="outlined-required"
         label={label || ""}
         multiline
-        onChange={onChange}
-        value={changeableText}
+        onBlur={onChange}
+        defaultValue={changeableText}
         variant="filled"
     />
 };
