@@ -22,7 +22,8 @@ export const QuestionsListComponent: FC<IQuestionsListComponent> = (
         onChangeTechnologies,
         onChangeRestrictions,
         onChangePriorities,
-        onChangeStudies
+        onChangeStudies,
+        onChangeMotivation
     }
 ) => {
     return (
@@ -54,7 +55,7 @@ export const QuestionsListComponent: FC<IQuestionsListComponent> = (
             <TextEditorComponent
                 onChangeText={onChangePersonalImpression}
                 changeableText={questionsList && questionsList.personalImpression ? questionsList.personalImpression : ''}
-                label="Vector of development"
+                label="Personal impression"
             />
 
             <TextEditorComponent
@@ -87,6 +88,12 @@ export const QuestionsListComponent: FC<IQuestionsListComponent> = (
                 label="Studies"
             />
 
+            <TextEditorComponent
+                onChangeText={onChangeMotivation}
+                changeableText={questionsList && questionsList.motivationWorkingForCompany ? questionsList.motivationWorkingForCompany : ''}
+                label="Motivation of working for company"
+            />
+
             {
                 questionsList ? <List>
                     {
@@ -101,6 +108,38 @@ export const QuestionsListComponent: FC<IQuestionsListComponent> = (
                     }
                 </List> : null
             }
+
+            <pre style={{userSelect: 'auto'}}>
+                        {
+                        ` Technical tasks
+                        
+ Task 1. Implement CommonComponent, that renders some ButtonsComponents with inner text.
+ Next behavior needs to be realized:
+ - ButtonComponent receives number and render button that has this number as a text.
+ - after click number increases.
+ - CommonComponent has to receive ButtonComponents and shows them.
+
+ Task 2. Implement functional React component that get data from API and show that.
+ API returns array from goods.
+ Example: [{id: 1, name: computer}, …].
+
+ Additional task: You need to make additional request that contains goods’ prices, 
+ receive them, sort by price and add price to your output.
+ Example: [{id: 2, price: 2000}, ...]
+
+ Task 3. Implement fragment of JS code that works with two API 
+ and generates list of films where each of items contain name and image and should be sorted by name.
+ First API provides films' covers. 
+ Example: [{filmId: 2, image: 'url'}, ...].
+ Second API provides information about films.
+ Examples: [{filmId: 1, name: 'Avatar'}, ...].
+
+ Task 4. Implement hook constructor that calls callback before render.`
+                    }
+                </pre>
+            <br/>
+            <br/>
+            <br/>
         </>
     )
 };
@@ -119,4 +158,5 @@ interface IQuestionsListComponent {
     onChangeRestrictions: (restrictions: string) => void
     onChangePriorities: (priorities: string) => void
     onChangeStudies: (studies: string) => void
+    onChangeMotivation: (motivation: string) => void
 }

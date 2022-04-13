@@ -7,6 +7,7 @@ import {TypeScriptQuestionsList} from '../../../questions/TypeScriptQuestionsLis
 import {JavaScriptQuestionsList} from '../../../questions/JavaScriptQuestionsList';
 import {HTMLQuestionsList} from '../../../questions/HTMLQuestionsList';
 import {CSSQuestionsList} from '../../../questions/CSSQuestionsList';
+import {SoftSkillsQuestionList} from "../../../questions/SoftSkillsQuestionList";
 
 export const initQuestions = (): IQuestionsList => {
     const questionList: IQuestionsList = {
@@ -22,12 +23,13 @@ export const initQuestions = (): IQuestionsList => {
         studies: '',
         motivationWorkingForCompany: '',
         themes: [
+            ...SoftSkillsQuestionList.themes,
             ...ReactQuestionsList.themes,
-            ...ReduxQuestionsList.themes,
             ...TypeScriptQuestionsList.themes,
             ...JavaScriptQuestionsList.themes,
             ...HTMLQuestionsList.themes,
-            ...CSSQuestionsList.themes
+            ...CSSQuestionsList.themes,
+            ...ReduxQuestionsList.themes,
         ]
     };
 

@@ -14,6 +14,7 @@ export const ReduxQuestionsList: IQuestionsList = {
                     id: '2.1',
                     level: IQuestionLevel.FIRST,
                     question: '3 principles of Redux',
+                    theme: '3 principles of Redux',
                     suggestion: '3 principles of Redux (https://redux.js.org/understanding/thinking-in-redux/three-principles)',
                     grade: IQuestionGrade.NONE,
                 },
@@ -21,6 +22,7 @@ export const ReduxQuestionsList: IQuestionsList = {
                     id: '2.2',
                     level: IQuestionLevel.FIRST,
                     question: 'action',
+                    theme: 'action',
                     suggestion: 'action',
                     grade: IQuestionGrade.NONE
                 },
@@ -28,6 +30,7 @@ export const ReduxQuestionsList: IQuestionsList = {
                     id: '2.2',
                     level: IQuestionLevel.FIRST,
                     question: 'middleware',
+                    theme: 'middleware',
                     suggestion: 'middleware',
                     grade: IQuestionGrade.NONE
                 },
@@ -35,6 +38,7 @@ export const ReduxQuestionsList: IQuestionsList = {
                     id: '2.2',
                     level: IQuestionLevel.FIRST,
                     question: 'reducer',
+                    theme: 'reducer',
                     suggestion: 'reducer',
                     grade: IQuestionGrade.NONE
                 },
@@ -42,6 +46,7 @@ export const ReduxQuestionsList: IQuestionsList = {
                     id: '2.2',
                     level: IQuestionLevel.SECOND,
                     question: 'pure function',
+                    theme: 'pure function',
                     suggestion: 'pure function',
                     grade: IQuestionGrade.NONE
                 },
@@ -49,6 +54,7 @@ export const ReduxQuestionsList: IQuestionsList = {
                     id: '2.2',
                     level: IQuestionLevel.FIRST,
                     question: 'store',
+                    theme: 'store',
                     suggestion: 'store',
                     grade: IQuestionGrade.NONE
                 },

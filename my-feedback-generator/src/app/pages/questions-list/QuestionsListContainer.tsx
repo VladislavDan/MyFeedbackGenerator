@@ -135,6 +135,15 @@ export const QuestionsListContainer: FC<IQuestionsListContainer> = ({questionsLi
         }
     }
 
+    const onChangeMotivation = (motivationWorkingForCompany: string) => {
+        if(state && state.questionsList) {
+            questionsListService.changeQuestionListChannel.next({
+                ...state.questionsList,
+                motivationWorkingForCompany
+            })
+        }
+    }
+
     return <QuestionsListComponent
         questionsList={state ? state.questionsList : null}
         onChangeThemeGrade={onChangeThemeGrade}
@@ -149,6 +158,7 @@ export const QuestionsListContainer: FC<IQuestionsListContainer> = ({questionsLi
         onChangeTechnologies={onChangeTechnologies}
         onChangeVectorOfDevelopment={onChangeVectorOfDevelopment}
         onChangeWouldWorkWithCandidate={onChangeWouldWorkWithCandidate}
+        onChangeMotivation={onChangeMotivation}
     />;
 };
 

@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a6852af-1423-4564-a98a-d5927663e030" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/my-feedback-generator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/package-lock.json" afterDir="false" />
+    <list default="true" id="0a6852af-1423-4564-a98a-d5927663e030" name="Changes" comment="Added new field in feedback">
+      <change afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/parts/toolbar/logic/getFeedbackText.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/SoftSkillsQuestionList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/common/elements/text-editor/TextEditorComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/common/elements/text-editor/TextEditorComponent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/common/elements/text-editor/TextEditorComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/common/elements/text-editor/TextEditorComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/QuestionsListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/QuestionsListComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/QuestionsListContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/QuestionsListContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/QuestionsListService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/QuestionsListService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/types/IQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/types/IQuestionsList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-feedback-generator/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/elements/themes-list-item/ThemesListItemComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/elements/themes-list-item/ThemesListItemComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/logic/initQuestions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/logic/initQuestions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/parts/toolbar/ToolbarService.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/parts/toolbar/ToolbarService.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/CSSQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/CSSQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/HTMLQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/HTMLQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/JavaScriptQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/JavaScriptQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReactQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReactQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReduxQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReduxQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/TypeScriptQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/TypeScriptQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/types/IQuestion.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/types/IQuestion.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,8 +70,18 @@
       <updated>1646841801368</updated>
       <workItem from="1646841803393" duration="12000" />
       <workItem from="1646841927328" duration="362000" />
-      <workItem from="1646915640554" duration="4532000" />
+      <workItem from="1646915640554" duration="4839000" />
+      <workItem from="1647246324056" duration="252000" />
+      <workItem from="1649833436227" duration="9325000" />
     </task>
+    <task id="LOCAL-00001" summary="Added new field in feedback">
+      <created>1646921611738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646921611738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +97,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added new field in feedback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new field in feedback" />
   </component>
 </project>

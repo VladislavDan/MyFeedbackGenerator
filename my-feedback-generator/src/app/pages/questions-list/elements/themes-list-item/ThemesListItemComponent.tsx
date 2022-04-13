@@ -42,6 +42,16 @@ export const ThemesListItemComponent: FC<IThemesListItemComponent> = ({theme, on
                     })
                 }
             </List>
+            <br/>
+            <div style={{
+                background: 'black',
+                backgroundSize: '5px',
+                height: '2px',
+                width: '100%',
+                marginLeft: '10px',
+                marginRight: '10px'
+            }}/>
+            <br/>
         </>
     );
 };
