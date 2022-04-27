@@ -1,6 +1,6 @@
 import {IQuestionsList} from '../../../types/IQuestionsList';
 import {ReactQuestionsList} from '../../../questions/ReactQuestionsList';
-import {ReduxQuestionsList} from '../../../questions/ReduxQuestionsList';
+import {ReduxNgRxQuestionsList} from '../../../questions/ReduxNgRxQuestionsList';
 import {IQuestionsTheme} from '../../../types/IQuestionsThem';
 import {IQuestion} from '../../../types/IQuestion';
 import {TypeScriptQuestionsList} from '../../../questions/TypeScriptQuestionsList';
@@ -29,7 +29,7 @@ export const initQuestions = (): IQuestionsList => {
             ...JavaScriptQuestionsList.themes,
             ...HTMLQuestionsList.themes,
             ...CSSQuestionsList.themes,
-            ...ReduxQuestionsList.themes,
+            ...ReduxNgRxQuestionsList.themes,
         ]
     };
 

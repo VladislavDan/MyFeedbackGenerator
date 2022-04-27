@@ -3,7 +3,7 @@ import {IThemeGrade} from '../types/IThemGrade';
 import {IQuestionGrade} from '../types/IQuestionGrade';
 import {IQuestionLevel} from '../types/IQuestionLevel';
 
-export const ReduxQuestionsList: IQuestionsList = {
+export const ReduxNgRxQuestionsList: IQuestionsList = {
     themes: [
         {
             id: '2',
