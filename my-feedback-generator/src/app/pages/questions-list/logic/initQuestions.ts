@@ -8,6 +8,9 @@ import {JavaScriptQuestionsList} from '../../../questions/JavaScriptQuestionsLis
 import {HTMLQuestionsList} from '../../../questions/HTMLQuestionsList';
 import {CSSQuestionsList} from '../../../questions/CSSQuestionsList';
 import {SoftSkillsQuestionList} from "../../../questions/SoftSkillsQuestionList";
+import {ReactNativeQuestionsList} from "../../../questions/ReactNativeQuestionsList";
+import {AngularQuestionsList} from "../../../questions/AngularQuestionsList";
+import {RxJSQuestionList} from "../../../questions/RxJSQuestionList";
 
 export const initQuestions = (): IQuestionsList => {
     const questionList: IQuestionsList = {
@@ -30,6 +33,9 @@ export const initQuestions = (): IQuestionsList => {
             ...HTMLQuestionsList.themes,
             ...CSSQuestionsList.themes,
             ...ReduxNgRxQuestionsList.themes,
+            ...ReactNativeQuestionsList.themes,
+            ...AngularQuestionsList.themes,
+            ...RxJSQuestionList.themes
         ]
     };
 

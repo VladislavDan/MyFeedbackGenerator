@@ -7,16 +7,24 @@ export const RxJSQuestionList: IQuestionsList = {
     themes: [
         {
             id: '1',
-            name: 'React',
+            name: 'RxJS',
             grade: IThemeGrade.NONE,
             questions: [
                 {
                     id: '1.1',
                     level: IQuestionLevel.FIRST,
-                    question: 'JSX',
-                    theme: 'JSX',
+                    question: 'ReplaySubject vs BehaviourSubject',
+                    theme: 'ReplaySubject vs BehaviourSubject',
                     grade: IQuestionGrade.NONE,
-                    suggestion: '',
+                    suggestion: 'ReplaySubject vs BehaviourSubject',
+                },
+                {
+                    id: '1.1',
+                    level: IQuestionLevel.FIRST,
+                    question: 'cold observable vs hot observable',
+                    theme: 'cold observable vs hot observable',
+                    grade: IQuestionGrade.NONE,
+                    suggestion: 'cold observable vs hot observable',
                 },
             ]
         }

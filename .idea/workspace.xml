@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a6852af-1423-4564-a98a-d5927663e030" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/AngularQuestionList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/RxJSQuestionList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReactNativeQuestionsList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/logic/initQuestions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/pages/questions-list/logic/initQuestions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/AngularQuestionList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/AngularQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/JavaScriptQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/JavaScriptQuestionsList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReactQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReactQuestionsList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReduxQuestionsList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/ReduxNgRxQuestionsList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/RxJSQuestionList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/app/questions/RxJSQuestionList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-feedback-generator/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-feedback-generator/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,12 @@
       <workItem from="1646915640554" duration="4839000" />
       <workItem from="1647246324056" duration="252000" />
       <workItem from="1649833436227" duration="10089000" />
-      <workItem from="1650617123557" duration="2804000" />
+      <workItem from="1650617123557" duration="3050000" />
+      <workItem from="1651055509309" duration="3456000" />
+      <workItem from="1651664296998" duration="2080000" />
+      <workItem from="1652432494278" duration="193000" />
+      <workItem from="1652441661759" duration="930000" />
+      <workItem from="1652952617382" duration="2918000" />
     </task>
     <task id="LOCAL-00001" summary="Added new field in feedback">
       <created>1646921611738</created>
@@ -78,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649856118524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added new questions">
+      <created>1651053725238</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651053725238</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new field in feedback" />
     <MESSAGE value="Added new field for feedback, added questions and changes some styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new field for feedback, added questions and changes some styles" />
+    <MESSAGE value="Added new questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new questions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

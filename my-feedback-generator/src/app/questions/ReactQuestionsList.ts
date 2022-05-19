@@ -56,7 +56,7 @@ export const ReactQuestionsList: IQuestionsList = {
                     question: 'Hooks',
                     theme: 'Hooks',
                     grade: IQuestionGrade.NONE,
-                    suggestion: 'Hooks',
+                    suggestion: '',
                 },
                 {
                     id: '1.5',
@@ -64,7 +64,7 @@ export const ReactQuestionsList: IQuestionsList = {
                     question: 'useEffect',
                     theme: 'useEffect',
                     grade: IQuestionGrade.NONE,
-                    suggestion: 'useEffect',
+                    suggestion: '',
                 },
                 {
                     id: '1.6',
