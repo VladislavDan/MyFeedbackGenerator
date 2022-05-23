@@ -1,10 +1,10 @@
 import {Routs} from '../../common/Routs';
-import {Channel} from '../../common/Channel';
 import {IQuestionsList} from '../../types/IQuestionsList';
 import {StorageService} from '../../common/services/StorageService';
 import {map, tap} from 'rxjs/operators';
 import {saveTextInFile} from '../../common/logic/saveTextInFile';
 import {getFeedbackText} from "./logic/getFeedbackText";
+import {Channel} from "../../../MyTools/channel-conception/Channel";
 
 export class ToolbarService {
 

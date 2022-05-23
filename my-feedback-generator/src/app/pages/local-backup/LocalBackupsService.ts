@@ -2,9 +2,9 @@ import {of} from 'rxjs';
 import {switchMap, tap} from 'rxjs/operators';
 
 import {StorageService} from '../../common/services/StorageService';
-import {Channel} from '../../common/Channel';
 import {saveTextInFile} from '../../common/logic/saveTextInFile';
 import {IQuestionsList} from '../../types/IQuestionsList';
+import {Channel} from "../../../MyTools/channel-conception/Channel";
 
 export class LocalBackupsService {
 

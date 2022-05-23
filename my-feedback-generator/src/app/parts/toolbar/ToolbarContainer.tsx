@@ -5,7 +5,7 @@ import {useLocation} from 'react-router-dom';
 import {ToolbarComponent} from './ToolbarComponent';
 import {navigationPanelService} from '../navigation-panel/NavigationPanelService';
 import {ToolbarService} from './ToolbarService';
-import {useChannel} from '../../common/hooks/useChannel';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
 
 export const ToolbarContainer: FC<IToolbarContainer> = ({toolbarService}): ReactElement => {
 

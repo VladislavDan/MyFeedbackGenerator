@@ -4,12 +4,12 @@ import {GoogleLoginResponse, GoogleLoginResponseOffline} from 'react-google-logi
 import {useHistory} from 'react-router';
 
 import {Routs} from '../../common/Routs';
-import {useChannel} from '../../common/hooks/useChannel';
 import {GoogleAuthService} from './GoogleAuthService';
 import {GoogleAuthComponent} from './GoogleAuthComponent';
 import {IAppContext} from '../../types/IAppContext';
 import {AppContext} from '../../../App';
 import {ErrorService} from '../../parts/error-container/ErrorService';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
 
 export const GoogleAuthContainer: FC<IGoogleAuthContainer> = ({googleAuthService, errorService}) => {
 

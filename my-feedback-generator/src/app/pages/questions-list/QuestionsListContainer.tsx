@@ -3,11 +3,11 @@ import {FC, useState} from 'react';
 
 import {QuestionsListComponent} from './QuestionsListComponent';
 import {QuestionsListService} from './QuestionsListService';
-import {useChannel} from '../../common/hooks/useChannel';
 import {IQuestionsList} from '../../types/IQuestionsList';
-import {useConstructor} from '../../common/hooks/useConstructor';
 import {IThemeGrade} from '../../types/IThemGrade';
 import {IQuestionGrade} from '../../types/IQuestionGrade';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
+import {useConstructor} from "../../../MyTools/react-hooks/useConstructor";
 
 export const QuestionsListContainer: FC<IQuestionsListContainer> = ({questionsListService}) => {
 

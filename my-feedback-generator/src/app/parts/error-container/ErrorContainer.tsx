@@ -1,8 +1,8 @@
 import React, {FC, useState} from 'react';
 
-import {useChannel} from '../../common/hooks/useChannel';
 import {ErrorComponent} from './ErrorComponent';
 import {ErrorService} from './ErrorService';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
 
 export const ErrorContainer: FC<IErrorContainer> = ({errorService}) => {
 

@@ -1,16 +1,16 @@
 import * as React from 'react';
 import {FC, useState} from 'react';
 
-import {useChannel} from '../../common/hooks/useChannel';
 import {GoogleBackupsService} from './GoogleBackupsService';
 import {IGoogleDriveFile} from '../../types/IGoogleDriveFile';
 import {BackupsListComponent} from './BackupsListComponent';
 import {useHistory} from 'react-router';
 import {Routs} from '../../common/Routs';
-import {useConstructor} from '../../common/hooks/useConstructor';
 import {SpinnerService} from '../../parts/spinner/SpinnerService';
-import {useUnsubscribe} from '../../common/hooks/useUnsubscribe';
 import {ConfirmDialogService} from '../../parts/confirm-dialog/ConfirmDialogService';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
+import {useConstructor} from "../../../MyTools/react-hooks/useConstructor";
+import {useUnsubscribe} from "../../../MyTools/react-hooks/useUnsubscribe";
 
 export const GoogleBackupsContainer: FC<IGoogleBackupsContainer> = ({spinnerService, googleBackupsService, confirmDialogService}) => {
 
@@ -65,7 +65,7 @@ export const GoogleBackupsContainer: FC<IGoogleBackupsContainer> = ({spinnerServ
     const onDelete = (backupID: string) => {
         googleBackupsService.backupLoadChannel.next(backupID);
 
-        const subscription = confirmDialogService.confirmationChannel.subscribe((isConfirm) => {
+        const subscription = confirmDialogService.confirmationChannel.subscribe((isConfirm: boolean) => {
             if (isConfirm) {
                 spinnerService.spinnerCounterChannel.next(1);
                 googleBackupsService.backupDeleteChannel.next(backupID);

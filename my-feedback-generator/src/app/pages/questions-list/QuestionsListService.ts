@@ -1,5 +1,5 @@
+import {of} from "rxjs";
 import {StorageService} from '../../common/services/StorageService';
-import {Channel} from '../../common/Channel';
 import {IQuestionsList} from '../../types/IQuestionsList';
 import {map, switchMap, tap} from 'rxjs/operators';
 import {IQuestionGrade} from '../../types/IQuestionGrade';
@@ -7,7 +7,7 @@ import {IThemeGrade} from '../../types/IThemGrade';
 import {changeQuestionGrade} from './logic/changeQuestionGrade';
 import {changeThemeGrade} from './logic/changeThemeGrade';
 import {initQuestions} from './logic/initQuestions';
-import {of} from "rxjs";
+import {Channel} from "../../../MyTools/channel-conception/Channel";
 
 export class QuestionsListService {
 

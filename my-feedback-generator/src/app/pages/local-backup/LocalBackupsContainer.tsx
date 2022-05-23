@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {FC, useRef} from 'react';
 
-import {useChannel} from '../../common/hooks/useChannel';
 import {LocalBackupsService} from './LocalBackupsService';
 import {Button} from '@mui/material';
-import {useUnsubscribe} from '../../common/hooks/useUnsubscribe';
 import {ConfirmDialogService} from '../../parts/confirm-dialog/ConfirmDialogService';
 import {SpinnerService} from '../../parts/spinner/SpinnerService';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
+import {useUnsubscribe} from "../../../MyTools/react-hooks/useUnsubscribe";
 
 export const LocalBackupsContainer: FC<ILocalBackupsContainer> = ({localBackupsService, confirmDialogService, spinnerService}) => {
 

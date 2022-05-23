@@ -4,9 +4,9 @@ import {ajax, AjaxResponse} from 'rxjs/ajax';
 
 import {StorageService} from '../../common/services/StorageService';
 import {IGoogleDriveFile} from '../../types/IGoogleDriveFile';
-import {Channel} from '../../common/Channel';
 import {formatCreatedDate} from './logic/formatCreatedDate';
 import {IQuestionsList} from '../../types/IQuestionsList';
+import {Channel} from "../../../MyTools/channel-conception/Channel";
 
 export class GoogleBackupsService {
 

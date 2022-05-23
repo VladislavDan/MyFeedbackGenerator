@@ -2,8 +2,8 @@ import * as React from 'react';
 import {FC} from 'react';
 
 import {ConfirmDialogComponent} from './ConfirmDialogComponent';
-import {useChannel} from '../../common/hooks/useChannel';
 import {ConfirmDialogService} from './ConfirmDialogService';
+import {useChannel} from "../../../MyTools/channel-conception/react-hooks/useChannel";
 
 export const ConfirmDialogContainer: FC<IConfirmDialogContainer> = ({confirmDialogService}) => {
 
