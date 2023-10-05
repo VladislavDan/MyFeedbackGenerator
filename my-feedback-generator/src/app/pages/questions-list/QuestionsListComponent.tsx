@@ -26,72 +26,73 @@ export const QuestionsListComponent: FC<IQuestionsListComponent> = (
         onChangeMotivation
     }
 ) => {
+
     return (
         <>
             <TextEditorComponent
                 onChangeText={onChangeLevel}
                 changeableText={questionsList && questionsList.actualLevel ? questionsList.actualLevel : ''}
-                label="Actual level"
+                label="Актуальный уровень кандидата"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeEnglish}
                 changeableText={questionsList && questionsList.english ? questionsList.english : ''}
-                label="English"
+                label="Красные флаги"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeWouldWorkWithCandidate}
                 changeableText={questionsList && questionsList.wouldWorkWithCandidate ? questionsList.wouldWorkWithCandidate : ''}
-                label="Would work with candidate"
+                label="Хочу ли я работать с этим кандидатом"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeVectorOfDevelopment}
                 changeableText={questionsList && questionsList.vectorOfDevelopment ? questionsList.vectorOfDevelopment : ''}
-                label="Vector of development"
+                label="Вектор развития в компании"
             />
 
             <TextEditorComponent
                 onChangeText={onChangePersonalImpression}
                 changeableText={questionsList && questionsList.personalImpression ? questionsList.personalImpression : ''}
-                label="Personal impression"
+                label="Личное впечатление"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeExperience}
                 changeableText={questionsList && questionsList.experience ? questionsList.experience : ''}
-                label="Experience"
+                label="Опыт"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeTechnologies}
                 changeableText={questionsList && questionsList.technologies ? questionsList.technologies : ''}
-                label="Technologies"
+                label="Технологии"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeRestrictions}
                 changeableText={questionsList && questionsList.restrictions ? questionsList.restrictions : ''}
-                label="Restrictions"
+                label="Чем не хочет заниматься в компании"
             />
 
             <TextEditorComponent
                 onChangeText={onChangePriorities}
                 changeableText={questionsList && questionsList.priorities ? questionsList.priorities : ''}
-                label="Priorities"
+                label="Чем хочет заниматься в компании"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeStudies}
                 changeableText={questionsList && questionsList.studies ? questionsList.studies : ''}
-                label="Studies"
+                label="Образование"
             />
 
             <TextEditorComponent
                 onChangeText={onChangeMotivation}
                 changeableText={questionsList && questionsList.motivationWorkingForCompany ? questionsList.motivationWorkingForCompany : ''}
-                label="Motivation of working for company"
+                label="Почему выбрал эту компанию"
             />
 
             {
@@ -113,28 +114,21 @@ export const QuestionsListComponent: FC<IQuestionsListComponent> = (
                         {
                         ` Technical tasks
                         
- Task 1. Implement CommonComponent, that renders some ButtonsComponents with inner text.
- Next behavior needs to be realized:
- - ButtonComponent receives number and render button that has this number as a text.
- - after click number increases.
- - CommonComponent has to receive ButtonComponents and shows them.
+ Task 1. Реализовать компоненту, которая рендерит кнопки с текстом.
+ Следующее поведение должно быть реализовано:
+ - Компонента кнопки получает на вход число и рендерит кнопку с этим числом в качестве внутреннего текста.
+ - Если нажать на кнопку число увеличивается.
+ - Основная компонента получает список компонент кнопок через props и отображает их.
 
- Task 2. Implement functional React component that get data from API and show that.
- API returns array from goods.
- Example: [{id: 1, name: computer}, …].
+ Task 2. Реализовать компоненту которая получает данные через API и отображает их.
+ API возвращает массив товарос.
+ Пример: [{id: 1, name: computer}, …].
 
- Additional task: You need to make additional request that contains goods’ prices, 
- receive them, sort by price and add price to your output.
- Example: [{id: 2, price: 2000}, ...]
+ Дополнительное задание: Нужно сделать дополнительный запрос и получить цены товаров, 
+ объединить товары и их цены и отсортировать по цене.
+ Пример: [{id: 2, price: 2000}, ...]
 
- Task 3. Implement fragment of JS code that works with two API 
- and generates list of films where each of items contain name and image and should be sorted by name.
- First API provides films' covers. 
- Example: [{filmId: 2, image: 'url'}, ...].
- Second API provides information about films.
- Examples: [{filmId: 1, name: 'Avatar'}, ...].
-
- Task 4. Implement hook constructor that calls callback before render.`
+ Task 4. Реализовать hook конструктор который будет вызывать получаемый на вход кэлбэк до начала рендера.`
                     }
                 </pre>
             <br/>

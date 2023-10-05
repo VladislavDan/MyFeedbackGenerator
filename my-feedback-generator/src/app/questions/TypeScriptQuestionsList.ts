@@ -13,17 +13,17 @@ export const TypeScriptQuestionsList: IQuestionsList = {
                 {
                     id: '2.1',
                     level: IQuestionLevel.FIRST,
-                    question: 'Generics',
-                    theme: 'Generics',
-                    suggestion: 'Generics',
+                    question: 'Дженерики',
+                    theme: 'Дженерики',
+                    suggestion: 'Дженерики',
                     grade: IQuestionGrade.NONE,
                 },
                 {
                     id: '2.1',
                     level: IQuestionLevel.FIRST,
-                    question: 'Modifiers',
-                    theme: 'Modifiers',
-                    suggestion: 'Modifiers',
+                    question: 'Модификаторы доступа',
+                    theme: 'Модификаторы доступа',
+                    suggestion: 'Модификаторы доступа',
                     grade: IQuestionGrade.NONE,
                 },
                 {
@@ -61,9 +61,9 @@ export const TypeScriptQuestionsList: IQuestionsList = {
                 {
                     id: '2.1',
                     level: IQuestionLevel.SECOND,
-                    question: 'implementations',
-                    theme: 'implementations',
-                    suggestion: "Decorator's implementations",
+                    question: 'реализация',
+                    theme: 'реализация',
+                    suggestion: "реализация Decorator",
                     grade: IQuestionGrade.NONE,
                 },
                 {
@@ -101,9 +101,9 @@ export const TypeScriptQuestionsList: IQuestionsList = {
                 {
                     id: '2.1',
                     level: IQuestionLevel.SECOND,
-                    question: 'property’s default value',
-                    theme: 'property’s default value',
-                    suggestion: "enum's property’s default value",
+                    question: 'значения по умолчанию',
+                    theme: 'значения по умолчанию',
+                    suggestion: "enum значения по умолчанию",
                     grade: IQuestionGrade.NONE,
                 },
                 {

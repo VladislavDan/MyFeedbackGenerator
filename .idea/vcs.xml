@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my-feedback-generator/src/CV" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/my-feedback-generator/src/MyTools" vcs="Git" />
   </component>
 </project>

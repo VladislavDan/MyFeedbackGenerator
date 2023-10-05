@@ -13,9 +13,9 @@ export const ReduxNgRxQuestionsList: IQuestionsList = {
                 {
                     id: '2.1',
                     level: IQuestionLevel.FIRST,
-                    question: '3 principles of Redux',
-                    theme: '3 principles of Redux',
-                    suggestion: '3 principles of Redux (https://redux.js.org/understanding/thinking-in-redux/three-principles)',
+                    question: '3 принцыпа Redux',
+                    theme: '3 принцыпа Redux',
+                    suggestion: '3 принцыпа Redux (https://redux.js.org/understanding/thinking-in-redux/three-principles)',
                     grade: IQuestionGrade.NONE,
                 },
                 {

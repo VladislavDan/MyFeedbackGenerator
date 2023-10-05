@@ -1,6 +1,6 @@
 export enum IThemeGrade {
-    GOOD = 'good',
-    AVG = 'avg',
-    POOR = 'poor',
-    NONE = 'none'
+    GOOD = 'хорошо',
+    AVG = 'нормально',
+    POOR = 'плохо',
+    NONE = 'не определено'
 }

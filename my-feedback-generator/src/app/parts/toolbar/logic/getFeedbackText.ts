@@ -1,39 +1,39 @@
-import {IQuestionsList} from "../../../types/IQuestionsList";
-import {IQuestionGrade} from "../../../types/IQuestionGrade";
-import {IQuestion} from "../../../types/IQuestion";
-import {IThemeGrade} from "../../../types/IThemGrade";
-import {IQuestionLevel} from "../../../types/IQuestionLevel";
-import {IQuestionsTheme} from "../../../types/IQuestionsThem";
+import {IQuestionsList} from '../../../types/IQuestionsList';
+import {IQuestionGrade} from '../../../types/IQuestionGrade';
+import {IQuestion} from '../../../types/IQuestion';
+import {IThemeGrade} from '../../../types/IThemGrade';
+import {IQuestionLevel} from '../../../types/IQuestionLevel';
+import {IQuestionsTheme} from '../../../types/IQuestionsThem';
 
 export const getFeedbackText = (questionsList: IQuestionsList): string => {
 
     let mainPart = ''
 
-    mainPart = mainPart + `Actual level: ${questionsList.actualLevel}\n\n`
+    mainPart = mainPart + `Актуальный уровень кандидата: ${questionsList.actualLevel}\n\n`
 
-    mainPart = mainPart + `English: ${questionsList.english}\n\n`
+    mainPart = mainPart + `Красные флаги: ${questionsList.english}\n\n`
 
-    mainPart = mainPart + `Would work with candidate: ${questionsList.wouldWorkWithCandidate}\n\n`
+    mainPart = mainPart + `Хочу ли я работать с этим кандидатом: ${questionsList.wouldWorkWithCandidate}\n\n`
 
-    mainPart = mainPart + `Vector of development: ${questionsList.vectorOfDevelopment}\n\n`
+    mainPart = mainPart + `Вектор развития в компании: ${questionsList.vectorOfDevelopment}\n\n`
 
-    mainPart = mainPart + `Personal impression: ${questionsList.personalImpression}\n\n`
+    mainPart = mainPart + `Личное впечатление: ${questionsList.personalImpression}\n\n`
 
-    mainPart = mainPart + `Experience: ${questionsList.experience}\n\n`
+    mainPart = mainPart + `Опыт: ${questionsList.experience}\n\n`
 
-    mainPart = mainPart + `Technologies: ${questionsList.technologies}\n\n`
+    mainPart = mainPart + `Технологии: ${questionsList.technologies}\n\n`
 
-    mainPart = mainPart + `Restrictions: ${questionsList.restrictions}\n\n`
+    mainPart = mainPart + `Чем не хочет заниматься в компании: ${questionsList.restrictions}\n\n`
 
-    mainPart = mainPart + `Priorities: ${questionsList.priorities}\n\n`
+    mainPart = mainPart + `Чем хочет заниматься в компании: ${questionsList.priorities}\n\n`
 
-    mainPart = mainPart + `Studies: ${questionsList.studies}\n\n`
+    mainPart = mainPart + `Образование: ${questionsList.studies}\n\n`
 
-    mainPart = mainPart + `Motivation of working for company: ${questionsList.motivationWorkingForCompany}\n\n`
+    mainPart = mainPart + `Почему выбрал эту компанию: ${questionsList.motivationWorkingForCompany}\n\n`
 
-    let skillsPart = 'Checked skills (grades: poor, avg, good):\n\n';
+    let skillsPart = 'Проверенные скиллы (оценки: плохо, нормально, хорошо):\n\n';
 
-    let suggestionsPart = 'It would be great if you fixed next gaps: \n\n';
+    let suggestionsPart = 'Было бы замечательно закрыть следующие пробелы: \n\n';
 
     questionsList.themes.forEach((theme: IQuestionsTheme, index) => {
 
